@@ -8,55 +8,57 @@
     <meta name="keywords" content="machine learning, artificial intelligence, model serving, model deployment, continuous, experiment, data pipeline, scikit-learn, tensorflow, r, pmml, xgboost, docker, kubernetes, reproducibility, apache spark, spark ml, elasticsearch, spark analytics, big data analytics, hfds, hadoop, metrics, kibana">
     <meta name="robots" content="index, follow">
     <title>PipelineAI - Compare Live Predictions</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
-    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/user.css">
-    <link rel="stylesheet" href="../assets/css/Drag--Drop-Upload-Form.css">
-    <link rel="stylesheet" href="../assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
-    <link rel="stylesheet" href="../assets/css/model-dropzone.css">
-    <link rel="stylesheet" href="../assets/css/Newsletter-Subscription-Form.css">
-    <link rel="stylesheet" href="../assets/css/Team-Boxed.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78551725-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-78551725-1');
+</script>
 </head>
 
 <body style="padding:0px;">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand" href="/"></a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-            <div
-                class="collapse navbar-collapse" id="navcol-1"><a class="navbar-link" href="index.html"><img src="../assets/img/logo/pipelineai-split-black-258x62.png" height="50px" style="padding:10px;"></a>
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="/">Home </a></li>
-                    <li class="active" role="presentation"><a href="/features">Features </a></li>
-                    <li role="presentation"><a href="/products">Products </a></li>
-                    <li role="presentation"><a href="/integrations">Integrations </a></li>
-                    <li role="presentation"><a href="/about">About Us </a></li>
-                    <li role="presentation"><a href="/tour">Tour </a></li>
-                    <li role="presentation"><a href="/workshops">Workshops </a></li>
-                    <li role="presentation"><a href="/community">Community </a></li>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="/"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1"><a href="index.html"><img src="../assets/img/logo/pipelineai-split-black-258x62.png" height="50px" style="padding:10px;"></a>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/features">Features </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/products">Products </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/integrations">Integrations </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about">About Us </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/tour">Tour </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/workshops">Workshops </a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/community">Community </a></li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
     <section>
         <h2 class="text-center" data-aos="fade-up"><img src="../assets/img/logo/pipelineai-split-black-258x62.png"> Compare</h2>
-        <p class="text-center" style="background-color:rgb(238,244,247);font-size:24px;"><i class="glyphicon glyphicon-ok"></i> Response Time <i class="glyphicon glyphicon-ok"></i> Throughput <i class="glyphicon glyphicon-ok"></i> Cost Per Prediction (Per Cloud)</p>
-        <p class="text-center"><img class="img-responsive" src="../assets/img/compare-cost-per-prediction.png" style="padding:20px;"></p>
+        <p class="text-center" style="background-color:rgb(238,244,247);font-size:24px;"><i class="fa fa-check"></i> Response Time <i class="fa fa-check"></i> Throughput <i class="fa fa-check"></i> Cost Per Prediction (Per Cloud)</p>
+        <p class="text-center"><img class="img-fluid" src="../assets/img/compare-cost-per-prediction.png" style="padding:20px;"></p>
     </section>
     <p class="text-center" style="margin:0px 0px 30px 0px;"><a class="btn btn-primary active" role="button" href="/features" style="padding:20px;">Back to features</a></p>
     <section class="features" style="margin:10px 0px 10px 0px;padding:20px;">
         <div class="container">
             <div class="row icon-features" style="margin:0px 0px;">
-                <div class="col-xs-4 icon-feature"><i class="fa fa-refresh" style="font-size:60px;width:58px;"></i>
+                <div class="col-4 icon-feature"><i class="fa fa-refresh" style="font-size:60px;width:58px;"></i>
                     <p>Continuous Model Training</p>
                 </div>
-                <div class="col-xs-4 icon-feature"><i class="fa fa-tachometer" style="font-size:60px;"></i>
+                <div class="col-4 icon-feature"><i class="fa fa-tachometer" style="font-size:60px;"></i>
                     <p>Real-Time 360º Dashboards </p>
                 </div>
-                <div class="col-xs-4 icon-feature"><i class="fa fa-line-chart" style="width:60px;height:60px;font-size:60px;"></i>
+                <div class="col-4 icon-feature"><i class="fa fa-line-chart" style="width:60px;height:60px;font-size:60px;"></i>
                     <p>Hybrid-Cloud Autoscaling </p>
                 </div>
             </div>
@@ -83,17 +85,12 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/ga.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
-    <script src="../assets/js/goog-report-community-conversion.js"></script>
-    <script src="../assets/js/dropzone.js"></script>
-    <script src="../assets/js/pipeline-dropzone.js"></script>
-    <script src="../assets/js/pipeline-live-predictions.js"></script>
-    <script src="../assets/js/bs-animation.js"></script>
     <script src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="../assets/js/script.min.js"></script>
 </body>
 
 </html>
