@@ -1,8 +1,8 @@
 site_name: PipelineAI 
-site_url: http://pipeline.ai
+site_url: https://pipeline.ai
 site_author: PipelineAI
 site_description: End-to-End ML and AI Model Training and Deployment Platform with GPUs 
-repo_url: https://github.com/fluxcapacitor/pipeline
+repo_url: https://github.com/PipelineAI/pipeline
 repo_name: PipelineAI Open Source
 #edit_uri: fluxcapacitor/pipeline/edit/master/docs/src
 docs_dir: src 
@@ -53,19 +53,19 @@ extra:
     code: 'Ubuntu Mono'
   social:
     - type: 'github'
-      link: 'https://github.com/fluxcapacitor/pipeline'
+      link: 'https://github.pipeline.ai'
     - type: 'meetup'
-      link: 'https://www.meetup.com/Advanced-Spark-and-TensorFlow-Meetup/'
+      link: 'https://meetup.pipeline.ai'
     - type: 'youtube'
-      link: 'https://youtube.com/channel/UCvlZKtekcKkBUuz8f9dhobw'
+      link: 'https://youtube.pipeline.ai'
     - type: 'slideshare'
-      link: 'https://www.slideshare.net/cfregly'
+      link: 'https://slideshare.pipeline.ai'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/6609122/'
     - type: 'twitter'
       link: 'https://twitter.com/cfregly'
     - type: 'globe'
-      link: 'https://hub.docker.com/r/fluxcapacitor'
+      link: 'https://hub.docker.com/r/PipelineAI'
       
 markdown_extensions:
   - markdown_include.include:
