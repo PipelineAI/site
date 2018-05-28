@@ -1,2 +1,0 @@
-# docs
-PipelineAI Site + Docs

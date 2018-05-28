@@ -1,9 +1,0 @@
-site_name: PipelineAI 
-site_url: https://pipeline.ai
-site_author: PipelineAI
-repo_url: https://github.com/PipelineAI/pipeline
-repo_name: PipelineAI 
-docs_dir: src 
-site_dir: generated
-strict: false
-pages: []
