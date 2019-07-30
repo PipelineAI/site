@@ -3,18 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PipelineAI:  KubeFlow + TFX:  The Standard Runtime For Every Model Prediction in the Enterprise.">
-    <meta name="keywords" content="kubflow, tfx, machine learning, artificial intelligence, model serving, model deployment, continuous, experiment, data pipeline, scikit-learn, tensorflow, r, pmml, xgboost, docker, kubernetes, reproducibility, apache spark, spark ml, elasticsearch, spark analytics, big data analytics, hfds, hadoop, metrics, kibana">
-    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>PipelineAI - Live Predictions</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/flatly/bootstrap.min.css">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="kubflow, tfx, machine learning, artificial intelligence, model serving, model deployment, continuous, experiment, data pipeline, scikit-learn, tensorflow, r, pmml, xgboost, docker, kubernetes, reproducibility, apache spark, spark ml, elasticsearch, spark analytics, big data analytics, hfds, hadoop, metrics, kibana">
+    <meta name="description" content="PipelineAI:  KubeFlow + TFX:  The Standard Runtime For Every Model Prediction in the Enterprise.">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/user.css">
+    <link rel="stylesheet" href="../assets/css/Drag--Drop-Upload-Form.css">
+    <link rel="stylesheet" href="../assets/css/Features-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="stylesheet" href="../assets/css/model-dropzone.css">
+    <link rel="stylesheet" href="../assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="../assets/css/static.css">
+    <link rel="stylesheet" href="../assets/css/Team-Boxed.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78551725-1"></script>
 <script>
@@ -69,9 +75,9 @@ s.parentNode.insertBefore(b, s);})();
 
 <body style="padding:0px;">
     <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="/"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="/"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
-                id="navcol-1"><a href="../index.html"><img src="../assets/img/logo/pipelineai-split-black-258x62.png" height="50px" style="padding:10px;"></a>
+                id="navcol-1"><a href="index.html"><img style="padding:10px;" src="../assets/img/logo/pipelineai-split-black-258x62.png" height="50px"></a>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/">Home </a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="/features">Features </a></li>
@@ -90,9 +96,9 @@ s.parentNode.insertBefore(b, s);})();
         <p class="text-center" style="font-size:24px;background-color:rgb(238,244,247);"> <i class="fa fa-check"></i> Real-Time Streaming <i class="fa fa-check"></i> Continuous Training <i class="fa fa-check"></i> Intelligent Sampling</p>
         <p class="text-center"></p>
     </section>
-    <p class="lead text-center" style="background-color:rgb(238,244,247);color:rgb(0,0,0);margin:20px 0px;"><strong> </strong><img src="../assets/img/kafka-logo-wide-219x98.png" style="height:50px;padding:5px;"><strong> Streaming Predictions</strong></p>
-    <p class="text-center"><img class="img-fluid" src="../assets/img/live-stream-predictions.png" style="padding:20px;"></p>
-    <p class="text-center" style="margin:20px 0px 30px 0px;"><a class="btn btn-primary active" role="button" href="/features" style="padding:20px;">Back to Features</a></p>
+    <p class="lead text-center" style="background-color:rgb(238,244,247);color:rgb(0,0,0);margin:20px 0px;"><strong> </strong><img style="height:50px;padding:5px;" src="../assets/img/kafka-logo-wide-219x98.png"><strong> Streaming Predictions</strong></p>
+    <p class="text-center"><img class="img-fluid" style="padding:20px;" src="../assets/img/live-stream-predictions.png"></p>
+    <p class="text-center" style="margin:20px 0px 30px 0px;"><a class="btn btn-primary active" role="button" style="padding:20px;" href="/features">Back to Features</a></p>
     <section class="features" style="margin:10px 0px 10px 0px;padding:20px;">
         <div class="container">
             <div class="row icon-features" style="margin:0px 0px;">
@@ -111,16 +117,16 @@ s.parentNode.insertBefore(b, s);})();
     <div id="mc_embed_signup" class="newsletter-subscribe" style="padding:0px 0px;">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center" style="margin:20px 0px 0px;">Register for <img src="../assets/img/logo/pipelineai-split-black-258x62.png" alt="PipelineAI" style="height:42px;"> Early Access</h2>
+                <h2 class="text-center" style="margin:20px 0px 0px;">Register for <img style="height:42px;" src="../assets/img/logo/pipelineai-split-black-258x62.png" alt="PipelineAI"> Early Access</h2>
             </div>
-            <form class="form-inline" action="//pipeline.us8.list-manage.com/subscribe/post?u=36f687b9890483604c5d7d2b5&amp;amp;id=010427f054" method="post" id="mc-embedded-subscribe-form"><input class="form-control" type="email" name="EMAIL" required="" placeholder="email address" id="mce-EMAIL"><button class="btn btn-primary" type="submit" id="mc-embedded-subscribe">Register </button></form>
+            <form class="form-inline" id="mc-embedded-subscribe-form" action="//pipeline.us8.list-manage.com/subscribe/post?u=36f687b9890483604c5d7d2b5&amp;amp;id=010427f054" method="post"><input class="form-control" type="email" id="mce-EMAIL" name="EMAIL" required="" placeholder="email address"><button class="btn btn-primary" id="mc-embedded-subscribe" type="submit">Register </button></form>
         </div>
     </div>
     <footer class="site-footer" style="padding:20px 0px 0px 0px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-                    <h5><img src="../assets/img/logo/pipelineai-split-black-258x62.png" height="25px" style="width:104;"> © 2018</h5>
+                    <h5><img style="width:104;" src="../assets/img/logo/pipelineai-split-black-258x62.png" height="25px"> © 2018</h5>
                 </div>
                 <div class="col-sm-6 social-icons" style="height:45px;"><a href="https://meetup.com/Advanced-Spark-and-TensorFlow-Meetup/"><i class="fa fa-meetup"></i></a><a href="https://slideshare.net/cfregly"><i class="fa fa-slideshare"></i></a><a href="https://www.youtube.com/c/PipelineAI"><i class="fa fa-youtube"></i></a>
                     <a
@@ -155,11 +161,11 @@ s.parentNode.insertBefore(b, s);})();
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-animation.js"></script>
     <script src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="../assets/js/script.min.js"></script>
 </body>
 
 </html>

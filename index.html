@@ -3,19 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PipelineAI:  KubeFlow + TFX:  The Standard Runtime For Every Model Prediction in the Enterprise.">
-    <meta name="keywords" content="kubflow, tfx, machine learning, artificial intelligence, model serving, model deployment, continuous, experiment, data pipeline, scikit-learn, tensorflow, r, pmml, xgboost, docker, kubernetes, reproducibility, apache spark, spark ml, elasticsearch, spark analytics, big data analytics, hfds, hadoop, metrics, kibana">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="PipelineAI: Real-Time Enterprise AI Platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>PipelineAI</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.1.2/flatly/bootstrap.min.css">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="kubflow, tfx, machine learning, artificial intelligence, model serving, model deployment, continuous, experiment, data pipeline, scikit-learn, tensorflow, r, pmml, xgboost, docker, kubernetes, reproducibility, apache spark, spark ml, elasticsearch, spark analytics, big data analytics, hfds, hadoop, metrics, kibana">
+    <meta name="description" content="PipelineAI: Real-Time Enterprise AI Platform">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/Drag--Drop-Upload-Form.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/model-dropzone.css">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="assets/css/static.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78551725-1"></script>
 <script>
@@ -70,9 +75,9 @@ s.parentNode.insertBefore(b, s);})();
 
 <body style="margin:5px;">
     <nav class="navbar navbar-light navbar-expand">
-        <div class="container-fluid"><a class="navbar-brand" href="/"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="/"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
-                id="navcol-1"><a href="index.html"><img src="assets/img/pipelineai.png" height="50px" data-bs-hover-animate="pulse" style="padding:5px;"></a>
+                id="navcol-1"><a href="index.html"><img data-bs-hover-animate="pulse" style="padding:5px;" src="assets/img/pipelineai.png" height="50px"></a>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://community.pipeline.ai"> Try Now!</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/products"> Products</a></li>
@@ -87,8 +92,8 @@ s.parentNode.insertBefore(b, s);})();
     <p class="text-center pulse animated" style="color:rgb(0,0,,0);font-size:20px;margin:20px 0px;">Deploy models when you want. &nbsp;Release features when you're ready.</p>
     <p class="text-center pulse animated" style="color:rgb(0,0,,0);font-size:20px;margin:20px 0px;">Eliminate risk and deliver value through continuous experiments with your machine learning pipelines.</p>
     <p class="text-center pulse animated" style="color:rgb(0,0,,0);font-size:20px;margin:20px 0px;">Control your users' experience through custom targeting rules, shadow mode, and percentage-based rollouts.</p>
-    <h2 class="text-center" style="color:rgb(239,15,1);background-color:rgba(238,244,247,0);margin:30px 0px;"><a class="btn btn-primary active btn-lg" role="button" href="/products" data-bs-hover-animate="pulse" style="font-size:12px;padding:20px;margin:0px;"><strong>PRODUCTS</strong></a><a class="btn btn-primary active btn-lg" role="button" href="http://community.pipeline.ai"
-            target="_blank" style="padding:20px;font-size:12px;margin:10px;"><strong>TRY NOW</strong></a></h2>
+    <h2 class="text-center" style="color:rgb(239,15,1);background-color:rgba(238,244,247,0);margin:30px 0px;"><a class="btn btn-primary active btn-lg" role="button" data-bs-hover-animate="pulse" style="font-size:12px;padding:20px;margin:0px;" href="/products"><strong>PRODUCTS</strong></a><a class="btn btn-primary active btn-lg" role="button" style="padding:20px;font-size:12px;margin:10px;"
+            href="http://community.pipeline.ai" target="_blank"><strong>TRY NOW</strong></a></h2>
     <p class="lead text-center" id="github-metrics" style="color:white;font-size:18px;margin:20px 0px;"><center>
     <a class="github-button" href="https://github.com/pipelineai/pipeline" data-size="large" data-show-count="true" aria-label="Stars pipelineai/pipeline on GitHub">Stars</a>
     &nbsp;
@@ -98,8 +103,8 @@ s.parentNode.insertBefore(b, s);})();
     <a href="https://www.eventbrite.com/e/full-day-workshop-kubeflow-kerastensorflow-20-tf-extended-tfx-kubernetes-pytorch-xgboost-airflow-tickets-63363033539">
         <h2 class="text-center" style="background-color:rgb(255,255,255);"><strong>Join Our Next</strong><br><strong>KubeFlow + TFX Workshop</strong><br><strong>(August 10, Online Global)</strong></h2>
     </a>
-    <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><strong>Every Framework, Every Hardware, Every Cloud</strong></h2>
-    <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><a href="#"><img class="img-fluid" src="assets/img/pipelineai-sample-models.png" style="width:400px;"></a></h2>
+    <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><strong>Every Framework</strong><br><strong>Every Hardware</strong><br><strong>Every Cloud</strong></h2>
+    <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><a href="#"><img class="img-fluid" style="width:400px;" src="assets/img/pipelineai-sample-models.png"></a></h2>
     <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><strong>Data Science Teams&nbsp;</strong>&nbsp;</h2>
     <div class="features-clean">
         <div class="container">
@@ -130,102 +135,102 @@ s.parentNode.insertBefore(b, s);})();
             </div>
         </div>
     </div>
-    <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><strong>Enterprises </strong><img src="assets/img/heart.png" style="width:50px;"> <img src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI" data-bs-hover-animate="pulse" style="height:55px;"> </h2>
+    <h2 class="text-center" style="margin:50px 0px 0px;background-color:rgb(255,255,255);"><strong>Enterprises </strong><img style="width:50px;" src="assets/img/heart.png"> <img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI"> </h2>
     <section class="testimonials" style="margin:0px 0px;">
         <div class="row features" style="margin:10px 50px;padding:10px 0px;">
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"> <img src="assets/img/netflix-logo.png" alt="Netflix PipelineAI" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"> <img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/netflix-logo.png" alt="Netflix PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name" style="padding:10px 0px 0px 0px;"><img src="assets/img/apple-logo.png" alt="Apple PipelineAI" style="height:70px;"> Apple</h3>
+                <h3 class="text-center name" style="padding:10px 0px 0px 0px;"><img style="height:70px;" src="assets/img/apple-logo.png" alt="Apple PipelineAI"> Apple</h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/expedia-logo.png" alt="Expedia PipelineAI" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/expedia-logo.png" alt="Expedia PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/walmart-logo.png" alt="Walmart PipelineAI" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/walmart-logo.png" alt="Walmart PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/square-logo.png" alt="Square PipelineAI" style="height:60p;width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="height:60p;width:200px;padding:20px 0px 0px 0px;" src="assets/img/square-logo.png" alt="Square PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/hotels-dot-com-logo.png" alt="Hotels.com PipelineAI" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/hotels-dot-com-logo.png" alt="Hotels.com PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;padding:20px 0px 0px 0px;">
-                <h3 class="text-center name" style="font-size:22px;"><img src="assets/img/dept-of-defense.png" alt="U.S. Department of Defense PipelineAI" style="width:50px;"> <strong>US Dept of Defense</strong></h3>
+                <h3 class="text-center name" style="font-size:22px;"><img style="width:50px;" src="assets/img/dept-of-defense.png" alt="U.S. Department of Defense PipelineAI"> <strong>US Dept of Defense</strong></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/nasa-logo.png" style="width:90px;padding:10px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:90px;padding:10px 0px 0px 0px;" src="assets/img/nasa-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/disney-logo-simple.png" alt="Disney PipelineAI" style="width:150px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:150px;padding:20px 0px 0px 0px;" src="assets/img/disney-logo-simple.png" alt="Disney PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/twitter-logo.png" alt="Twitter PipelineAI" style="width:200px;padding:23px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:23px 0px 0px 0px;" src="assets/img/twitter-logo.png" alt="Twitter PipelineAI"></h3>
                 <p class="text-center description"> </p>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/huawei-logo.png" alt="Huawei and PipelineAI" style="width:200px;padding:10px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:10px 0px 0px 0px;" src="assets/img/huawei-logo.png" alt="Huawei and PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/halliburton-logo.png" alt="Halliburton and PipelineAI" style="width:160px;padding:10px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:160px;padding:10px 0px 0px 0px;" src="assets/img/halliburton-logo.png" alt="Halliburton and PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/nordstrom-logo.png" style="width:200px;padding:30px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:30px 0px 0px 0px;" src="assets/img/nordstrom-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/homeaway-logo.png" alt="HomeAway PipelineAI" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/homeaway-logo.png" alt="HomeAway PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name" style="height:100px;"><img src="assets/img/spacenet-logo.png" style="width:200px;padding:20px 0px;"></h3>
+                <h3 class="text-center name" style="height:100px;"><img style="width:200px;padding:20px 0px;" src="assets/img/spacenet-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/uber-atg-logo.png" style="width:200px;padding:30px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:30px 0px 0px 0px;" src="assets/img/uber-atg-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/yahoo-logo.png" height="70px" style="width:150px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:150px;padding:20px 0px 0px 0px;" src="assets/img/yahoo-logo.png" height="70px"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/ancestry-logo.png" style="width:200px;padding:30px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:30px 0px 0px 0px;" src="assets/img/ancestry-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/toyota-logo.png" height="70px" style="height:90px;padding:10px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="height:90px;padding:10px 0px 0px 0px;" src="assets/img/toyota-logo.png" height="70px"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="height:100px;">
-                <h3 class="text-center name"><img src="assets/img/warnerbrothers-logo.png" alt="Warner Brothers and PipelineAI" style="padding:10px 0px 0px 0px;height:90px;"></h3>
+                <h3 class="text-center name"><img style="padding:10px 0px 0px 0px;height:90px;" src="assets/img/warnerbrothers-logo.png" alt="Warner Brothers and PipelineAI"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/zynga-logo.png" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/zynga-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/infosys-logo-2000x800.png" style="width:125px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:125px;padding:20px 0px 0px 0px;" src="assets/img/infosys-logo-2000x800.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/pagerduty-logo.png" style="width:200px;padding:20px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/pagerduty-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/charles-schwab-logo2.png" style="width:200px;padding:10px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;padding:10px 0px 0px 0px;" src="assets/img/charles-schwab-logo2.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/verizon-logo.png" style="padding:10px 0px 0px 0px;width:150px;"></h3>
+                <h3 class="text-center name"><img style="padding:10px 0px 0px 0px;width:150px;" src="assets/img/verizon-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/nielsen-logo.png" style="width:200px;margin:10px 0px 0px 0px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;margin:10px 0px 0px 0px;" src="assets/img/nielsen-logo.png"></h3>
             </div>
             <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
-                <h3 class="text-center name"><img src="assets/img/nvidia-cuda-338x181.png" style="width:200px;"></h3>
+                <h3 class="text-center name"><img style="width:200px;" src="assets/img/nvidia-cuda-338x181.png"></h3>
             </div>
         </div>
     </section>
-    <p class="text-center" style="color:white;font-size:18px;padding:0px;margin:50px 0px 30px;"><a class="btn btn-primary active btn-lg" role="button" href="/products" data-bs-hover-animate="pulse" style="font-size:12px;padding:20px;margin:0px;"><strong>PRODUCTS</strong></a><a class="btn btn-primary active btn-lg" role="button" href="http://community.pipeline.ai"
-            target="_blank" style="padding:20px;font-size:12px;margin:10px;"><strong>TRY NOW</strong></a></p>
-    <h2 class="text-center" style="margin:40px 0px 0px;background-color:rgb(255,255,255);"> <img src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI" data-bs-hover-animate="pulse" style="height:55px;">&nbsp;In The News</h2>
-    <h1 class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><strong>June 2019</strong><br>New PipelineAI Training:&nbsp;<a href="https://www.eventbrite.com/e/full-day-workshop-kubeflow-kerastensorflow-20-tf-extended-tfx-kubernetes-pytorch-xgboost-airflow-tickets-63362929227"><strong>KubeFlow + TFX + Airflow</strong></a></h1>
+    <p class="text-center" style="color:white;font-size:18px;padding:0px;margin:50px 0px 30px;"><a class="btn btn-primary active btn-lg" role="button" data-bs-hover-animate="pulse" style="font-size:12px;padding:20px;margin:0px;" href="/products"><strong>PRODUCTS</strong></a><a class="btn btn-primary active btn-lg" role="button" style="padding:20px;font-size:12px;margin:10px;"
+            href="http://community.pipeline.ai" target="_blank"><strong>TRY NOW</strong></a></p>
+    <h2 class="text-center" style="margin:40px 0px 0px;background-color:rgb(255,255,255);"> <img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI">&nbsp;In The News</h2>
+    <h1 class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><strong>August 2019</strong><br>PipelineAI Announces KubeFlow Workshop<br><a href="https://www.eventbrite.com/e/full-day-workshop-kubeflow-kerastensorflow-20-tf-extended-tfx-kubernetes-pytorch-xgboost-airflow-tickets-63362929227"><strong>KubeFlow + TFX + Airflow</strong></a></h1>
     <h1
         class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><a href="https://www.eventbrite.com/e/full-day-workshop-kubeflow-kerastensorflow-20-tf-extended-tfx-kubernetes-airflow-jupyter-tickets-62027635327" target="_blank"><img class="img-fluid" src="assets/img/kubeflow-inside.png" width="400"></a></h1>
         <hr style="background-color:rgb(255,255,255);margin:8px 400px;">
         <hr style="background-color:rgb(255,255,255);margin:8px 400px;">
-        <h1 class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><strong>January 2019</strong><br>PipelineAI Hosts Continuous AI Workshop at Deep Learning Summit in San Francisco</h1>
+        <h1 class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><strong>January 2019</strong><br>PipelineAI Hosts AI Workshop <br>Deep Learning Summit in San Francisco</h1>
         <h1 class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><img class="rounded-circle img-fluid" src="assets/img/rework-pipelineai.png" width="300"></h1>
         <hr style="background-color:rgb(255,255,255);margin:8px 400px;">
         <hr style="background-color:rgb(255,255,255);margin:8px 400px;">
@@ -239,21 +244,21 @@ s.parentNode.insertBefore(b, s);})();
         <hr style="background-color:rgb(255,255,255);margin:8px 400px;">
         <hr style="background-color:rgb(255,255,255);margin:8px 400px;">
         <h2 class="text-center" style="color:rgb(0,0,0);background-color:rgb(255,255,255);font-size:30px;margin:20px 0px 10px;"><strong>October 2017</strong><br>PipelineAI Wins O'Reilly Media AI Startup Competition<br></h2>
-        <p class="text-center" style="color:white;font-size:18px;padding:0px;margin:50px 0px 30px;"><a class="btn btn-primary active btn-lg" role="button" href="/products" data-bs-hover-animate="pulse" style="font-size:12px;padding:20px;margin:0px;"><strong>PRODUCTS</strong></a><a class="btn btn-primary active btn-lg" role="button" href="http://community.pipeline.ai"
-                target="_blank" style="padding:20px;font-size:12px;margin:10px;"><strong>TRY NOW</strong></a></p>
+        <p class="text-center" style="color:white;font-size:18px;padding:0px;margin:50px 0px 30px;"><a class="btn btn-primary active btn-lg" role="button" data-bs-hover-animate="pulse" style="font-size:12px;padding:20px;margin:0px;" href="/products"><strong>PRODUCTS</strong></a><a class="btn btn-primary active btn-lg" role="button" style="padding:20px;font-size:12px;margin:10px;"
+                href="http://community.pipeline.ai" target="_blank"><strong>TRY NOW</strong></a></p>
         <div id="mc_embed_signup" class="newsletter-subscribe" style="padding:0px 0px;">
             <div class="container align-content-center">
                 <div class="intro">
-                    <h2 class="text-center" style="margin:20px 0px 0px;font-size:40px;">Register for <img src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI" data-bs-hover-animate="pulse" style="height:55px;">&nbsp;</h2>
+                    <h2 class="text-center" style="margin:20px 0px 0px;font-size:40px;">Register for <img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI">&nbsp;</h2>
                 </div>
-                <form class="form-inline justify-content-center" action="//pipeline.us8.list-manage.com/subscribe/post?u=36f687b9890483604c5d7d2b5&amp;amp;id=010427f054" method="post" id="mc-embedded-subscribe-form"><input class="form-control" type="email" name="EMAIL" required="" placeholder="email address" id="mce-EMAIL"><button class="btn btn-primary" type="submit" id="mc-embedded-subscribe">Register </button></form>
+                <form class="form-inline justify-content-center" id="mc-embedded-subscribe-form" action="//pipeline.us8.list-manage.com/subscribe/post?u=36f687b9890483604c5d7d2b5&amp;amp;id=010427f054" method="post"><input class="form-control" type="email" id="mce-EMAIL" name="EMAIL" required="" placeholder="email address"><button class="btn btn-primary" id="mc-embedded-subscribe" type="submit">Register </button></form>
             </div>
         </div>
         <footer class="site-footer" style="padding:20px 0px 0px 0px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h5><img src="assets/img/pipelineai.png" height="25px" data-bs-hover-animate="pulse" style="width:104;"> © <strong>2019</strong></h5>
+                        <h5><img data-bs-hover-animate="pulse" style="width:104;" src="assets/img/pipelineai.png" height="25px"> © <strong>2019</strong></h5>
                     </div>
                     <div class="col-sm-6 social-icons" style="height:45px;"><a href="https://meetup.com/Advanced-Spark-and-TensorFlow-Meetup/"><i class="fa fa-meetup"></i></a><a href="https://slideshare.net/cfregly"><i class="fa fa-slideshare"></i></a><a href="https://www.youtube.com/c/PipelineAI"><i class="fa fa-youtube"></i></a>
                         <a
@@ -262,11 +267,11 @@ s.parentNode.insertBefore(b, s);})();
                 </div>
             </div>
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bs-animation.js"></script>
         <script src="https://buttons.github.io/buttons.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-        <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
