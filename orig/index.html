@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PipelineAI</title>
+    <meta name="keywords" content="kubflow, tfx, machine learning, artificial intelligence, model serving, model deployment, continuous, experiment, data pipeline, scikit-learn, tensorflow, r, pmml, xgboost, docker, kubernetes, reproducibility, apache spark, spark ml, elasticsearch, spark analytics, big data analytics, hfds, hadoop, metrics, kibana">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="PipelineAI: Real-Time Enterprise AI Platform">
+    <link rel="icon" type="image/png" sizes="50x50" href="assets/img/pipelineai-logo-50x50.png">
+    <link rel="icon" type="image/png" sizes="50x50" href="assets/img/logo/pipelineai-logo-50x50.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/Drag--Drop-Upload-Form.css">
+    <link rel="stylesheet" href="assets/css/Features-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+    <link rel="stylesheet" href="assets/css/model-dropzone.css">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="assets/css/static.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78551725-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-78551725-1');
+</script>
+
+<!-- Start FullStory -->
+<script> 
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com'; window['_fs_org'] = 'NWGC4'; window['_fs_namespace'] = 'FS'; (function(m,n,e,t,l,o,g,y){ if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;} g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[]; o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_host+'/s/fs.js'; y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y); g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)}; g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)}; g.log = function(a,b) { g("log", [a,b]) }; g.consent=function(a){g("consent",!arguments.length||a)}; g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)}; g.clearUserCookie=function(){}; })(window,document,window['_fs_namespace'],'script','user');
+</script>
+<!-- End FullStory -->
+
+<script>
+  window.intercomSettings = {
+    app_id: "kax3hnsi"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/kax3hnsi';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+<script id="mcjs" type="c8710a320f4556b9813105cf-text/javascript">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/36f687b9890483604c5d7d2b5/bea3f7de205ef7ecfe355c670.js");</script>
+
+<script type="text/javascript">
+_linkedin_partner_id = "1117114";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=1117114&fmt=gif" />
+</noscript>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '336800963902530');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=336800963902530&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Start of pipelineai Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=58854f9a-a584-4860-94b0-a1a71f0836ea"> </script>
+<!-- End of pipelineai Zendesk Widget script -->
+</head>
+
+<body style="margin:5px;">
+    <nav class="navbar navbar-light navbar-expand" style="padding: 0px;">
+        <div class="container-fluid"><a class="navbar-brand" href="/"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1"><a href="/"><img data-bs-hover-animate="pulse" src="assets/img/pipelineai.png" height="50px"></a>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation" style="margin: 0px 0px;"><a class="nav-link border rounded" href="https://community.pipeline.ai" target="_blank" style="margin: 0px 5px;"> Try It Now!</a></li>
+                    <li class="nav-item" role="presentation" style="margin: 0px 0px;"><a class="nav-link border rounded" href="https://www.eventbrite.com/e/full-day-workshop-kubeflow-kerastensorflow-20-tf-extended-tfx-kubernetes-pytorch-xgboost-airflow-tickets-63362929227" target="_blank"> Workshop</a></li>
+                    <li class="nav-item"
+                        role="presentation" style="margin: 0px 0px;"><a class="nav-link border rounded" href="/community" target="_blank" style="margin: 0px 5px;">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p class="text-center" style="color: white;font-size: 18px;padding: 0px;margin: 0px 0px 0px;"><img class="rounded img-fluid" src="assets/img/kubeflow-inside-pipeline.png" style="margin: 0px 0px 20px 0px;"></p>
+    <p class="text-center border rounded border-dark pulse animated" style="color: rgb(0,0,,0);font-size: 34px;margin: 10px 0px 0px 0px;background-color: #ebebeb;"><img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI">&nbsp;is KubeFlow as a Service (KAAS)</p>
+    <p class="lead text-center" id="github-metrics" style="color:white;font-size:18px;margin:20px 0px;"><center>
+    <a class="github-button" href="https://github.com/pipelineai/pipeline" data-size="large" data-show-count="true" aria-label="Stars pipelineai/pipeline on GitHub">Stars</a>
+    &nbsp;
+    <a class="github-button" href="https://github.com/pipelineai/pipeline/fork" data-size="large" data-show-count="true" aria-label="Forks pipelineai/pipeline on GitHub">Forks</a>
+</center></p>
+    <h2 class="text-center" style="color: rgb(239,15,1);"><a class="btn btn-primary active btn-lg" role="button" style="padding: 20px;font-size: 16px;margin: 10px;background-color: rgb(5, 90, 218);" href="http://community.pipeline.ai" target="_blank"><strong>TRY IT NOW!</strong></a></h2>
+    <h2 class="text-center border rounded border-dark"
+        style="margin: 50px 0px 0px;background-color: #ebebeb;"><strong>Enterprises </strong><img style="width:50px;" src="assets/img/heart.png"> <img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI"> </h2>
+    <section class="testimonials" style="margin:0px 0px;">
+        <div class="row features" style="margin:10px 50px;padding:10px 0px;">
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"> <img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/netflix-logo.png" alt="Netflix PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name" style="padding:10px 0px 0px 0px;"><img style="height:70px;" src="assets/img/apple-logo.png" alt="Apple PipelineAI"> Apple</h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/expedia-logo.png" alt="Expedia PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/walmart-logo.png" alt="Walmart PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="height:60p;width:200px;padding:20px 0px 0px 0px;" src="assets/img/square-logo.png" alt="Square PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/hotels-dot-com-logo.png" alt="Hotels.com PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;padding:20px 0px 0px 0px;">
+                <h3 class="text-center name" style="font-size:22px;"><img style="width:50px;" src="assets/img/dept-of-defense.png" alt="U.S. Department of Defense PipelineAI"> <strong>US Dept of Defense</strong></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:90px;padding:10px 0px 0px 0px;" src="assets/img/nasa-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:150px;padding:20px 0px 0px 0px;" src="assets/img/disney-logo-simple.png" alt="Disney PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:23px 0px 0px 0px;" src="assets/img/twitter-logo.png" alt="Twitter PipelineAI"></h3>
+                <p class="text-center description"> </p>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:10px 0px 0px 0px;" src="assets/img/huawei-logo.png" alt="Huawei and PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:160px;padding:10px 0px 0px 0px;" src="assets/img/halliburton-logo.png" alt="Halliburton and PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:30px 0px 0px 0px;" src="assets/img/nordstrom-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/homeaway-logo.png" alt="HomeAway PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name" style="height:100px;"><img style="width:200px;padding:20px 0px;" src="assets/img/spacenet-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:30px 0px 0px 0px;" src="assets/img/uber-atg-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:150px;padding:20px 0px 0px 0px;" src="assets/img/yahoo-logo.png" height="70px"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:30px 0px 0px 0px;" src="assets/img/ancestry-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="height:90px;padding:10px 0px 0px 0px;" src="assets/img/toyota-logo.png" height="70px"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="height:100px;">
+                <h3 class="text-center name"><img style="padding:10px 0px 0px 0px;height:90px;" src="assets/img/warnerbrothers-logo.png" alt="Warner Brothers and PipelineAI"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/zynga-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:125px;padding:20px 0px 0px 0px;" src="assets/img/infosys-logo-2000x800.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:20px 0px 0px 0px;" src="assets/img/pagerduty-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;padding:10px 0px 0px 0px;" src="assets/img/charles-schwab-logo2.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="padding:10px 0px 0px 0px;width:150px;" src="assets/img/verizon-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;margin:10px 0px 0px 0px;" src="assets/img/nielsen-logo.png"></h3>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="padding:0px;height:100px;">
+                <h3 class="text-center name"><img style="width:200px;" src="assets/img/nvidia-cuda-338x181.png"></h3>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2 class="text-center border rounded border-dark" style="background-color: #ebebeb;"><strong>Community </strong><img style="width:50px;" src="assets/img/heart.png">&nbsp;<img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI"><br></h2>
+        <p class="text-center" style="margin:0px 15px 10px 15px;font-size:24px;"><img class="img-fluid" src="assets/img/geo-border-no-stars.png"></p>
+    </section>
+    <section class="testimonials">
+        <h2 class="text-center border rounded border-dark" style="background-color: #ebebeb;"><strong>Contact Us</strong><br></h2>
+        <p class="text-center" style="margin: 0px 15px 10px 15px;font-size: 24px;"><a href="https://joinslack.pipeline.ai" target="_blank"><img src="assets/img/slack-logo.png" style="height: 50px;"></a><br>support@pipeline.ai</p>
+        <p class="text-center" style="margin:0px 15px 10px 15px;font-size:24px;"></p>
+    </section>
+    <section class="testimonials">
+        <h2 class="text-center border rounded border-dark" style="background-color: #ebebeb;"><strong>Offices</strong><br></h2>
+        <p class="text-center" style="margin: 0px 15px 00px 15px;font-size: 24px;padding: 0px;"><strong>San Francisco (HQ)</strong><br>Chicago<br>Washington DC<br>Austin<br>Dusseldorf<br>London</p>
+    </section>
+    <p class="text-center border rounded border-dark pulse animated" style="color: rgb(0,0,,0);font-size: 34px;margin: 10px 0px 0px 0px;background-color: #ebebeb;"><img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI">&nbsp;is KubeFlow as a Service (KAAS)</p>
+    <p class="lead text-center" id="github-metrics" style="color:white;font-size:18px;margin:20px 0px;"><center>
+    <a class="github-button" href="https://github.com/pipelineai/pipeline" data-size="large" data-show-count="true" aria-label="Stars pipelineai/pipeline on GitHub">Stars</a>
+    &nbsp;
+    <a class="github-button" href="https://github.com/pipelineai/pipeline/fork" data-size="large" data-show-count="true" aria-label="Forks pipelineai/pipeline on GitHub">Forks</a>
+</center></p>
+    <h2 class="text-center" style="color: rgb(239,15,1);"><a class="btn btn-primary active btn-lg" role="button" style="padding: 20px;font-size: 16px;margin: 10px;background-color: rgb(5, 90, 218);" href="http://community.pipeline.ai" target="_blank"><strong>TRY IT NOW!</strong></a></h2>
+    <section class="testimonials">
+        <h2 class="text-center border rounded border-dark" style="background-color: #ebebeb;"><strong>Register for</strong>&nbsp;<img data-bs-hover-animate="pulse" style="height:55px;" src="assets/img/logo/pipelineai-logo.png" alt="PipelineAI"></h2>
+        <form class="form-inline justify-content-center" id="mc-embedded-subscribe-form" action="//pipeline.us8.list-manage.com/subscribe/post?u=36f687b9890483604c5d7d2b5&amp;amp;id=010427f054"
+            method="post"><input class="form-control" type="email" id="mce-EMAIL" name="EMAIL" required="" placeholder="email address"><button class="btn btn-primary border rounded border-dark" id="mc-embedded-subscribe" type="submit" style="background-color: rgb(5, 90, 218);">Register </button></form>
+    </section>
+    <footer class="site-footer" style="padding:20px 0px 0px 0px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5><img data-bs-hover-animate="pulse" style="width:104;" src="assets/img/pipelineai.png" height="25px"> © <strong>2019</strong></h5>
+                </div>
+                <div class="col-sm-6 social-icons" style="height:45px;"><a href="/community"><i class="fa fa-meetup"></i></a><a href="/community"><i class="fa fa-slideshare"></i></a><a href="/community" target="_blank"><i class="fa fa-youtube"></i></a><a href="/community" target="_blank"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <h2 class="text-center" style="margin:0px 0px 20px;"></h2>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
